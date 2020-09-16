@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
     <meta charset="utf-8"/>
-    <title>Start Struck Date Admin Panel</title>
+    <title>StarStruck Date Admin Panel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta content="" name="description"/>
     <meta content="" name="author"/>
@@ -48,6 +48,7 @@
           media="screen"/>
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet" type="text/css"/>
+    @yield('header')
 </head>
 <body class=" ">
 <!-- START TOPBAR -->
@@ -220,14 +221,12 @@
                             </ul>
 
                         </li>
-
                         <li class="external">
                             <a href="javascript:;">
                                 <span>Read All Messages</span>
                             </a>
                         </li>
                     </ul>
-
                 </li>
                 <li class="notify-toggle-wrapper list-inline-item">
                     <!-- <a href="#" data-toggle="dropdown" class="toggle">
@@ -446,7 +445,7 @@
                         <span class="title">Dashboard</span>
                     </a>
                 </li>
-                <li class="open">
+                <li>
                     <a href="javascript:;">
                         <i class="fa fa-user-circle"></i>
                         <span class="title">Users</span>

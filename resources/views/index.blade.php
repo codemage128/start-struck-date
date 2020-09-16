@@ -3,7 +3,7 @@
     <div class='col-xl-12 col-lg-12 col-md-12 col-12'>
         <div class="page-title">
             <div class="float-left">
-                <h1 class="title">Start Struck Date App</h1>
+                <h1 class="title">StarStruck Date App</h1>
             </div>
         </div>
         <div class="float-right d-none">

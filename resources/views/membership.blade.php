@@ -1,4 +1,11 @@
 @extends('layout/sidebar')
+@section('header')
+    <style>
+        .table-scrollable{
+            overflow-x: auto;
+        }
+    </style>
+@stop
 @section('block')
     <div class='col-xl-12 col-lg-12 col-md-12 col-12'>
         <div class="page-title">
@@ -34,31 +41,33 @@
                 </div>
             </header>
             <div class="content-body">
-                <table class="table table-bordered text-center">
-                    <thead>
-                    <th>No.</th>
-                    <th>Name</th>
-                    <th>Birthday</th>
-                    <th>Email</th>
-                    <th>Membership Status</th>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Admin</td>
-                        <td>2020.09.14</td>
-                        <td>admin@admin.com</td>
-                        <td><span class="badge badge-md badge-primary">membership</span></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Admin2</td>
-                        <td>2020.09.14</td>
-                        <td>admin@admin.com</td>
-                        <td><span class="badge badge-md badge-primary">membership</span></td>
-                    </tr>
-                    </tbody>
-                </table>
+                <div class="table-scrollable">
+                    <table class="table table-bordered text-center">
+                        <thead>
+                        <th>No.</th>
+                        <th>Name</th>
+                        <th>Birthday</th>
+                        <th>Email</th>
+                        <th>Membership Status</th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Admin</td>
+                            <td>2020.09.14</td>
+                            <td>admin@admin.com</td>
+                            <td><span class="badge badge-md badge-primary">membership</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Admin2</td>
+                            <td>2020.09.14</td>
+                            <td>admin@admin.com</td>
+                            <td><span class="badge badge-md badge-primary">membership</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
     </div>
